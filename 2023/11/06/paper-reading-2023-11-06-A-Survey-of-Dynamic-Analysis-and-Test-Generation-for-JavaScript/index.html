@@ -9,7 +9,7 @@
     
     <title>
         
-            A Survey on Automated Dynamic Malware-Analysis Techniques and Tools |
+            A Survey of Dynamic Analysis and Test Generation for JavaScript |
         
         Happy House
     </title>
@@ -165,7 +165,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">A Survey on Automated Dynamic Malware-Analysis Techniques and Tools</span>
+            <span class="title-hover-animation">A Survey of Dynamic Analysis and Test Generation for JavaScript</span>
         </div>
 
         
@@ -184,8 +184,8 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2023-11-01 09:37:33</span>
-        <span class="mobile">2023-11-01 09:37</span>
+        <span class="pc">2023-11-06 17:47:01</span>
+        <span class="mobile">2023-11-06 17:47</span>
     </span>
     
     
@@ -194,7 +194,7 @@
             <ul>
                 
                     <li>
-                        <a href="/home/tags/program-analysis-paper-reading-summary/">program analysis, paper reading, summary</a>&nbsp;
+                        <a href="/home/tags/program-analysis-for-dynanmic-language-paper-reading-summary/">program analysis for dynanmic language, paper reading, summary</a>&nbsp;
                     </li>
                 
             </ul>
@@ -204,7 +204,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>477 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>369 字</span>
         </span>
     
     
@@ -225,87 +225,85 @@
         
 
         <div class="article-content markdown-body">
-            <h3 id="Summary-2">Summary</h3>
-<p>This paper is a survey on automated dynamic malware analysis, written by Manuel Egele et al. in 2012. The paper first introduces the types of malware and then discusses the analysis techniques and tools. The types of malware are classified into:</p>
-<ul>
-<li>Worm.</li>
-<li>Virus.</li>
-<li>Trojan horse.</li>
-<li>Spyware.</li>
-<li>Bot.</li>
-<li>Rootkit.</li>
-</ul>
-<p>Specific malware instances may exhibit the characteristics of multiple types. The analysis techniques for these malwares are classified into function call monitoring, function parameter analysis, information flow tracking, instruction trace, and autostart extensibility points. However, the sophisticated authors of malware also strived to evade investigation. For example, malwares may exhibit nonmalicious behavior when they detect analysis tools, and they are packed and obfuscated to encumber analysis conducted on them. Implementing a malware analysis system requires different design decisions that have far-reaching consequences. An analysis component that executes at a higher privilege level than the program under analysis cannot be accessed by this program. Implementing the analysis functionality on an emulator or virtual machine allows the analysis to conceal itself even from malware that executes in kernel space. The implementation strategies involve:</p>
-<ul>
-<li>Analysis in user/kernel space.</li>
-<li>Analysis in an emulator.</li>
-<li>Analysis in a virtual machine.</li>
-</ul>
-<p>The technique for resetting the analysis environment is essential because results are only comparable if each sample is executed in an identical environment. The network simulation method simulates the network so that the malware’s behavior requiring the network can be observed. Generic detection and reconstruction of packed code are devised to deobfuscate binaries that are obfuscated with unknown packers. Many tools use the different techniques mentioned above. The paper gives a summary describing which strategies are implemented for each tool. A discussion on the approaches, possible evasion techniques, and advantages over other approaches is given as well.</p>
-<h3 id="English-Learning-2">English Learning</h3>
+            <h3 id="Summary-3">Summary</h3>
+<p>This paper is written by <strong>Anders Moller</strong> etc. and published on ACM Computing Surveys, at September 2017. It mainly introduces dynamic analysis and test generation for JavaScript, of the challenges, the related approaches, and the future directions. Analysis of JavaScript is challenging because of its dynamic features, such as dynamic typing, dynamic code loading, and dynamic object creation. Dynamic analysis is more amenable rather than static analysis, due to the dynamic features. A mutitude of approached are investigated, aimed at allievating correctness and reliability issues, addressing security and privacy issues, improving performance, and making developer more productive. On the flip side, test generation is deeply discussed in this paper, which is a promising approach to improve the quality of JavaScript programs. Three frameworks are resumed to implement test generators: Artemis, Crawljax, and Jalangi. Artemis and Crawljax both exploit event and value space, while Jalangi only exploits value space. In addition, Jalangi and Crawljax have a plugin-based architecture, providing an easy way for others to build on these frameworks. Despite all the advances in analyzing JavaScript programs, various research challenges remain. These include improved support for code refactoring and program repair, analyses targeted at emerging platforms and useage scenarios of JavaScript, and combinations of test generation and dynanmic analysis.</p>
+<h3 id="English-Learning-3">English Learning</h3>
 <ol>
 <li>
 <p>words:<br>
-vendor<br>
-discriminate, differentiate, distinguish, discrepency<br>
-malicious, malware, malvolent<br>
-legitimate<br>
-spam (spam email)<br>
-surreptitiously<br>
-credential (banking credential)<br>
-sophisticated (knowledgeable)<br>
-mitigation (the detection and mitigation of malicious sorftware)<br>
-tedious (a tedious and error-prone task)<br>
-inherently (naturally)<br>
-tailored (specifically tailored malware, tailored suit)<br>
-coordinated (in a coordinated manner)<br>
-tamper (interfere, tamper with operating system)<br>
-commodity (commodity off-the-shelf operating system)<br>
-nefarious<br>
-lure<br>
-evasion, circumvent (evade), disguise, conceal<br>
-flaw (demerit)<br>
-ambiguous (uncertain)<br>
-exacerbate (make worse)<br>
-thwart, intercept, encumber (burden), preclude, cease (stop)<br>
-resilient (flexible)<br>
-intricate, curbersome, elaborate, opaque (complex)<br>
-applicability, feasibility<br>
-viable (workable)<br>
-leak<br>
-cloak</p>
+anticipate (expect)<br>
+heterogeneous (varied)<br>
+compound (intensify, is compounded by the fact that)<br>
+amenable (receptive)<br>
+nominal, titular (in name only)<br>
+oblivious (unaware)<br>
+likewise<br>
+proprietary<br>
+extent<br>
+benign (harmless)<br>
+alleviate (ease, alleviate issues)<br>
+pitfall (trap, bug)<br>
+idiom<br>
+suspiciously (doubtfully)<br>
+symptom<br>
+preemption (seizure)<br>
+glitch (problem)<br>
+pioneer<br>
+divergence<br>
+persistent<br>
+manifold (numerous)<br>
+mediate (intervene)<br>
+magnitude (immensity)<br>
+synthetic<br>
+facet<br>
+resume (begain again)<br>
+prohibit (prevent)<br>
+fidelity (accuracy)<br>
+metric<br>
+condensed (concentrated)<br>
+impact (influence)<br>
+provenance (origin)<br>
+recurring (recurring root causes)<br>
+elude, side-stepping (evade)<br>
+hereby<br>
+supersede (replace)<br>
+criteria<br>
+brittle<br>
+evolve<br>
+emerging</p>
 </li>
 <li>
 <p>phrases:<br>
-<strong>pose</strong> a threat to<br>
-<strong>employ</strong> techniques<br>
-<strong>strive</strong> to do (make every effort)<br>
-time-consuming (tedious)<br>
-error-prone<br>
-at the expense of<br>
-in combat against<br>
-familiarize … with … (familiarize the reader with the technology that we will be using in the remainder of this work)<br>
-point of view<br>
-shed light on<br>
-tamper-proof<br>
-handle over<br>
-cloak the slowdown<br>
-steer number of (a large number of)<br>
-exhibit the characteristics of</p>
+<strong>address</strong> the challenge\issue<br>
+this limitation have <strong>triggered</strong> research on program analysis for JavaScript<br>
+<strong>exercise</strong> the program<br>
+<strong>impose</strong> a challenge<br>
+to the best of our knowledge<br>
+on the flip side<br>
+<strong>deploy</strong> software<br>
+resort to (utilize)<br>
+ad hoc<br>
+steer … to …<br>
+align … with …<br>
+<strong>emit</strong> events<br>
+on par with<br>
+a multitude of<br>
+an order of magnitude</p>
 </li>
 <li>
 <p>technical words:<br>
-orthogonal<br>
-obfuscate (encrypt), deobfuscate (decrypt)<br>
-taxonomy<br>
-emulator<br>
-overlay</p>
+encapsulation<br>
+compatibility<br>
+artifact</p>
 </li>
 <li>
 <p>technical phrases:<br>
-intended function<br>
-reconvergence point<br>
-analysis component, analysis functionality</p>
+prototype-based inheritance<br>
+event-driven<br>
+fine-grained<br>
+non-homogeneity<br>
+type coercions<br>
+null pointer dereference</p>
 </li>
 </ol>
 
@@ -317,7 +315,7 @@ analysis component, analysis functionality</p>
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/home/tags/program-analysis-paper-reading-summary/">#program analysis, paper reading, summary</a>&nbsp;
+                        <a href="/home/tags/program-analysis-for-dynanmic-language-paper-reading-summary/">#program analysis for dynanmic language, paper reading, summary</a>&nbsp;
                     </li>
                 
             </ul>
@@ -326,29 +324,14 @@ analysis component, analysis functionality</p>
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/home/2023/11/06/paper-reading-2023-11-06-A-Survey-of-Dynamic-Analysis-and-Test-Generation-for-JavaScript/"
-                        >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">A Survey of Dynamic Analysis and Test Generation for JavaScript</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/home/2023/10/23/paper-reading-2023-10-23-A-Survey-of-Dynamic-Program-Analysis-Techniques-and-Tools/"
+                           href="/home/2023/11/01/paper-reading-2023-11-01-A-Survey-on-Automated-Dynamic-Malware-Analysis-Techniques-and-Tools/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">A Survey of Dynamic Program Analysis Techniques and Tools</span>
+                                <span class="post-nav-title-item">A Survey on Automated Dynamic Malware-Analysis Techniques and Tools</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -552,7 +535,7 @@ analysis component, analysis functionality</p>
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary-2"><span class="nav-number">1.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#English-Learning-2"><span class="nav-number">2.</span> <span class="nav-text">English Learning</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary-3"><span class="nav-number">1.</span> <span class="nav-text">Summary</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#English-Learning-3"><span class="nav-number">2.</span> <span class="nav-text">English Learning</span></a></li></ol>
     </div>
 </div>
         </aside>
