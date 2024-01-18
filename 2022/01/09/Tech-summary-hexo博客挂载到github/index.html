@@ -9,7 +9,7 @@
     
     <title>
         
-            雅思计划 |
+            hexo博客挂载到github pages |
         
         Happy House
     </title>
@@ -165,7 +165,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">雅思计划</span>
+            <span class="title-hover-animation">hexo博客挂载到github pages</span>
         </div>
 
         
@@ -184,9 +184,20 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-01-09 20:53:54</span>
-        <span class="mobile">2022-01-09 20:53</span>
+        <span class="pc">2022-01-09 20:54:26</span>
+        <span class="mobile">2022-01-09 20:54</span>
     </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/home/categories/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">技术博客</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
     
         <span class="article-tags article-meta-item">
@@ -194,7 +205,11 @@
             <ul>
                 
                     <li>
-                        <a href="/home/tags/%E9%9B%85%E6%80%9D/">雅思</a>&nbsp;
+                        <a href="/home/tags/hexo/">hexo</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/home/tags/github-pages/">github pages</a>&nbsp;
                     </li>
                 
             </ul>
@@ -204,7 +219,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>15 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>126 字</span>
         </span>
     
     
@@ -225,9 +240,22 @@
         
 
         <div class="article-content markdown-body">
-            <h2 id="雅思单词计划">雅思单词计划</h2>
-<p>使用扇贝单词，每日100</p>
-
+            <h1>1.按照<strong>github pages</strong>的<a class="link"   target="_blank" rel="noopener" href="https://docs.github.com/en/pages" >官方文档<i class="fas fa-external-link-alt"></i></a>教程建立自己的github网站。</h1>
+<h1>2.按照<strong>hexo</strong>的<a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/" >官方文档<i class="fas fa-external-link-alt"></i></a>安装hexo。</h1>
+<h1>3.重点来了，如何将hexo生成的静态网页自动推到github上？(有坑)</h1>
+<ul>
+<li>安装插件hexo-deployer-git:</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改blog根目录里的_config.yml文件:（有坑）</li>
+</ul>
+<p>网上教程需要修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: your git website repository</span><br><span class="line">  branch: your branch</span><br></pre></td></tr></table></figure>
+<p>实测还需要修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: website</span><br><span class="line">root: your webstie root</span><br></pre></td></tr></table></figure>
+<p>修改完成执行命令即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
         </div>
 
         
@@ -236,7 +264,11 @@
             <ul class="post-tags-box">
                 
                     <li class="tag-item">
-                        <a href="/home/tags/%E9%9B%85%E6%80%9D/">#雅思</a>&nbsp;
+                        <a href="/home/tags/hexo/">#hexo</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/home/tags/github-pages/">#github pages</a>&nbsp;
                     </li>
                 
             </ul>
@@ -248,13 +280,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/home/2022/01/09/hexo-hexo%E5%8D%9A%E5%AE%A2%E6%8C%82%E8%BD%BD%E5%88%B0github/"
+                           href="/home/2023/10/23/paper-reading-2023-10-23-A-Survey-of-Dynamic-Program-Analysis-Techniques-and-Tools/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">hexo博客挂载到github pages</span>
+                                <span class="post-nav-title-item">A Survey of Dynamic Program Analysis Techniques and Tools</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -362,7 +394,7 @@
               <span>2020</span>
               -
             
-            2023&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">xiaohu</a>
+            2024&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">xiaohu</a>
         </div>
         
             <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -456,7 +488,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%85%E6%80%9D%E5%8D%95%E8%AF%8D%E8%AE%A1%E5%88%92"><span class="nav-number">1.</span> <span class="nav-text">雅思单词计划</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">1.按照github pages的官方文档教程建立自己的github网站。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">2.按照hexo的官方文档安装hexo。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text">3.重点来了，如何将hexo生成的静态网页自动推到github上？(有坑)</span></a></li></ol>
     </div>
 </div>
         </aside>
