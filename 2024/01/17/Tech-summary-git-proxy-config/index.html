@@ -219,7 +219,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>150 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>156 字</span>
         </span>
     
     
@@ -244,7 +244,7 @@
 <p>不需要为github单独设置代理，git默认使用系统的<code>http_proxy</code>,<code>https_proxy</code>变量，所以只需要设置系统的代理即可。</p>
 <h1>2. 设置ssh代理（针对git+ssh协议的git仓库，如git@github:git-package）</h1>
 <p>在<code>~/.ssh/config</code>中添加如下内容：</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  User git</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br><span class="line">  ProxyCommand nc --proxy 127.0.0.1:1083(默认http代理端口) (--proxy-type 其他代理类型) %h %p</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  User git</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br><span class="line">  ProxyCommand nc --proxy 127.0.0.1:1083(代理类型对应端口，默认http类型) (--proxy-type 其他代理类型) %h %p</span><br></pre></td></tr></table></figure>
 <p>不需要再额外设置系统的任何proxy变量。<code>man ncat</code>查看ncat的帮助文档。</p>
 
         </div>
